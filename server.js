@@ -64,7 +64,7 @@ app.get('/',(req,res)=>{
     }
 })
 
-mongoose.connect("mongodb://localhost:27017/iCrowdTaskDB3",{useNewUrlParser:true, useUnifiedTopology:true})
+mongoose.connect("mongodb://localhost:27017/iCrowdTaskDB",{useNewUrlParser:true, useUnifiedTopology:true})
 
 passport.serializeUser(function(user, done) {
     done(null, user);
