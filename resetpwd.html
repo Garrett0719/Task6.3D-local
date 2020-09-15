@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+<link href="css/reqlogin.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/superhero/bootstrap.min.css" integrity="sha384-HnTY+mLT0stQlOwD3wcAzSVAZbrBp141qwfR4WfTqVQKSgmcgzk+oP0ieIyrxiFO" crossorigin="anonymous">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="google-signin-client_id" content="307404136527-nmgs78rltoisap6vm0muc2gsbb7ukvm9.apps.googleusercontent.com">
+<title>sign in page</title>
+</head>
+
+<body>
+    <div class="title">
+        <h2>iCrowdTask Reset Password</h2>
+    </div>
+    <div class="main">
+    <form action="/resetpwd" method="post">
+    <div class="rEmail">
+        <label for="email">Your email</label>
+        <br>
+        <input type="email" name="email" class="form-control" id="email" placeholder="Please input your email">
+    </div>
+    <div class="rPassword">
+        <label for="password">Please enter your new password</label>
+        <br>
+        <input type="password" name="newpassword" class="form-control" id="password" placeholder="Please enter your new password">
+    </div>
+    <div class="ConfrimPassword">
+        <label for="password">Please confrim your new password</label>
+        <br>
+        <input type="password" name="confirmnewpassword" class="form-control" id="password" placeholder="Please enter your new password">
+    </div>
+    <div class="button">
+        <button type="submit" class="btn btn-success"> Reset Password </button>
+    </div> 
+</div>
+</form>
+</body>
