@@ -51,6 +51,10 @@ email.send({
   res.redirect('/');
 });
 
+app.get('/reqtaskgoogle',(req,res)=>{
+    res.sendFile(__dirname + "/reqtaskgoogle.html")
+})
+
 app.get('/',(req,res)=>{
     if(req.session.sign){
         res.redirect('/reqtask')

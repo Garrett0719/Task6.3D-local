@@ -46,6 +46,7 @@
 <script type="text/javascript">
 function onSuccess(googleUser) {
 console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+window.location.href='/reqtaskgoogle'
 }
 function onFailure(error) {
 console.log(error);
